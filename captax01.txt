@@ -1,7 +1,47 @@
-/channels
-    ./self-service
-        ./mobile-app
-        ../portal
-    ../assisted
+/channels/self-service
+    ./mobile-app
+    ../portal
+/channels/assisted
+    ./agent-desktop
+    ../broker-portal
+    ../postroom
+    ../branch-teller
+    ../contact-centre
+    ../contact-centre/IVR
+/channels/open-banking-PSD2 
+/channels/intermediary-interface   
 /onboarding-origination
+    ./customer-onboarding
+    ../product-origination
+        ./product-catalogue
+          ./lending
+          ../deposits
 /customer
+    ./CIF
+    ../CRM
+        ./customer-servicing
+        ../account-servicing
+            ../account-servicing
+                ./product-catalogue
+                    ./lending
+                    ../deposits
+/product-core
+    ./product-catalogue
+        ./lending
+            ./personal-lending
+            ../SME-lending
+            ../purchase-finance
+            ../commercial-lending
+            ../retail-mortgages
+/product-core/product-catalogue/deposits
+            ./personal-deposits
+            ../business-deposits
+            ../stored-value-account
+            ../daily-banking-account
+            ../business-banking-account
+/product-core/product-factory
+/product-core/system-of-record
+    ./customer-level-accounts
+    ../accounting-GL
+/product-core/account-servicing-support
+/product-core/product-statements-reports
