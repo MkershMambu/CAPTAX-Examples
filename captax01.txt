@@ -45,3 +45,14 @@
     ../accounting-GL
 /product-core/account-servicing-support
 /product-core/product-statements-reports
+/payments/domestic-clearing
+    ./UK
+        ./FPS
+        ../BACS
+        ../CHAPS
+        ../ICS
+/payments/CASH
+/payments/cards/acquiring
+/payments/cards/issuing
+/payments/openbanking-PSD2/payments
+/payments/ISA-transfers
