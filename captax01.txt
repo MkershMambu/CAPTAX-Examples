@@ -5,3 +5,4 @@
     ../assisted
 /onboarding-origination
 /customer
+/payments
