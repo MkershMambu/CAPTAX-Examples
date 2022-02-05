@@ -1,0 +1,5 @@
+/channels
+./self-service
+../assisted
+/onboarding-origination
+/customer
