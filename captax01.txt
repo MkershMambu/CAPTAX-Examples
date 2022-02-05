@@ -1,5 +1,7 @@
 /channels
-./self-service
-../assisted
+    ./self-service
+        ./mobile-app
+        ../portal
+    ../assisted
 /onboarding-origination
 /customer
