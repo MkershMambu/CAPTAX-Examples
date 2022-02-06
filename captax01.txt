@@ -1,6 +1,6 @@
 /channels/self-service
     ./mobile-app
-    ../portal
+    ../web-portal
 /channels/assisted
     ./agent-desktop
     ../broker-portal
