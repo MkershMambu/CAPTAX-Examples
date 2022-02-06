@@ -56,3 +56,37 @@
 /payments/cards/issuing
 /payments/openbanking-PSD2/payments
 /payments/ISA-transfers
+/reg-reporting
+    ./product-catalogue
+        ./lending
+            ./personal-lending
+                ./UK
+                    ./CCA
+            ../SME-lending
+                ./UK
+                   ./unregulated
+            ../purchase-finance
+                ./UK
+                   ./CCA
+            ../commercial-lending
+                ./UK
+                    ./unregulated
+            ../retail-mortgages
+                ./UK
+                    ./MCOB
+/reg-reporting/product-catalogue/deposits
+            ./personal-deposits
+                ./UK
+                    ./TBD
+            ../business-deposits
+                ./UK
+                    ./TBD
+            ../stored-value-account
+                ./UK
+                    ./TBD
+            ../daily-banking-account
+                ./UK
+                    ./TBD
+            ../business-banking-account
+                ./UK
+                    ./TBD
