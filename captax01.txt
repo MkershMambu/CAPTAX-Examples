@@ -1,6 +1,7 @@
-/channels/self-service
-    ./mobile-app
-    ../web-portal
+/channels
+    ./self-service
+        ./mobile-app
+        ../web-portal
 /channels/assisted
     ./agent-desktop
     ../broker-portal
@@ -21,10 +22,9 @@
     ../CRM
         ./customer-servicing
         ../account-servicing
-            ../account-servicing
-                ./product-catalogue
-                    ./lending
-                    ../deposits
+            ./product-catalogue
+                ./lending
+                ../deposits
 /product-core
     ./product-catalogue
         ./lending
@@ -45,18 +45,22 @@
     ../accounting-GL
 /product-core/account-servicing-support
 /product-core/product-statements-reports
-/payments/domestic-clearing
-    ./UK
-        ./FPS
-        ../BACS
-        ../CHAPS
-        ../ICS
+/payments
+    ./domestic-clearing
+        ./UK
+            ./FPS
+            ../BACS
+            ../CHAPS
+            ../ICS
 /payments/CASH
-/payments/cards/acquiring
+/payments/cards
+    ./acquiring
 /payments/cards/issuing
-/payments/openbanking-PSD2/payments
+/payments/openbanking-PSD2
+    ./payments
 /payments/ISA-transfers
-/reg-reporting/product-catalogue
+/reg-reporting
+    ./product-catalogue
         ./lending
             ./personal-lending
                 ./UK
