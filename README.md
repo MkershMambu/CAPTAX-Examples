@@ -2,7 +2,7 @@
 
 Example capability-taxonmony (CAPTAX) for identifying the capability(s) required in a [composable-banking](https://www.mambu.com/composable-banking) solution.
 
-##[captax01](https://github.com/MkershMambu/CAPTAX-Examples/tree/main/captax01) 
+## [captax01](https://github.com/MkershMambu/CAPTAX-Examples/tree/main/captax01) 
 
 * [captax01](https://github.com/MkershMambu/CAPTAX-Examples/tree/main/captax01) is represented as folder structure.
 * This CAPTAX is focussed around the product-catalogue capabilities:
