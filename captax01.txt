@@ -105,7 +105,9 @@
     /payment-ordering/batch-payments
     /payment-ordering/direct-debit-collection-retries
 /reg-reporting
-    ./product-catalogue
+    ./general-reg-reports
+        ./UK
+    /reg-reporting/product-catalogue
         ./lending
             ./personal-lending
                 ./UK
