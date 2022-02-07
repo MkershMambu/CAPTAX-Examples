@@ -49,16 +49,61 @@
     ./domestic-clearing
         ./UK
             ./FPS
-            ../BACS
-            ../CHAPS
-            ../ICS
+                ./credit-transfer
+                    ./outgoing
+                    ../incoming
+            /payments/domestic-clearing/BACS
+                ./direct-debit
+                    ./mandate-setup
+                        ./outgoing
+                        ../incoming
+                    ../collection
+                        ./outgoing
+                        ../incoming
+                /payments/domestic-clearing/BACS/ISA-transfers
+                    ./outgoing
+                    ../incoming
+                /payments/domestic-clearing/BACS/CASS
+                /payments/domestic-clearing/BACS/credit-transfer
+                    ./incoming
+                    ../outgoing
+            /payments/domestic-clearing/CHAPS
+                ./credit-transfer
+                    ./outgoing
+                    ../incoming
+            /payments/domestic-clearing/BACS/ICS
+                ./cheque-deposit
+                    ./outgoing
+                ../incoming
 /payments/CASH
 /payments/cards
     ./acquiring
 /payments/cards/issuing
 /payments/openbanking-PSD2
     ./payments
-/payments/ISA-transfers
+/payment-ordering
+    ./future-dated-payments
+        ./standing-orders 
+        ../oneoff-forward-dated-payment 
+    /payment-ordering/payment-policy-authorisation-rules
+        ./bank-side-rules
+        ../customer-side-rules
+    /payment-ordering/payee-beneficiary-management
+    /payment-ordering/payment-limits
+    /payment-ordering/fx-quotes
+    /payment-ordering/payment-restrictions
+        ./locked-blocked-flagged
+            ./customer 
+            ../account 
+    /payment-ordering/payment-restrictions/product-type
+    /payment-ordering/payment-restrictions/notice-accounts
+    /payment-ordering/notice-account.notice-period-policing
+    /payment-ordering/cash-management
+        ./sweeping
+    /payment-ordering/auto-detect-internal-transfers
+    /payment-ordering/confirmation-of-payee
+    /payment-ordering/batch-payments
+    /payment-ordering/direct-debit-collection-retries
 /reg-reporting
     ./product-catalogue
         ./lending
@@ -93,3 +138,36 @@
             /reg-reporting/product-catalogue/deposits/business-banking-account
                 ./UK
                     ./TBD
+/document-management
+    ./dms-archive
+    ../dms-generate
+    ../dms-scam
+    ../dms-esignature
+/financial-crime
+    ./customer
+        ../peps-sanctions
+    /financial-crime/payments
+        ./peps-sanctions
+        ../transaction-monitoring
+        ../card-fraud
+        ../cheque-fraud
+/accounting-GL
+/treasury-ALM
+/data-lake-DWH
+    ./DWH-datastore
+    ../MI-reports
+    ../business-intelligence-insights
+    ../marketing-campaigns
+/asset-management
+    ./asset-registry
+    ../full-asset-management
+/collections-recovery
+/single-sign-on-IAM 
+/data-reconciliation
+/fulfilment-services
+    ./welcome-pack
+    ../cheque-book
+    ../passbook
+    ../statements
+    ../physical-cards
+/security-information-and-event-management-SIEM
