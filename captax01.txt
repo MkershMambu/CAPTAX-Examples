@@ -148,7 +148,7 @@
     ../dms-esignature
 /financial-crime
     ./customer
-        ../peps-sanctions
+        ./peps-sanctions
     /financial-crime/payments
         ./peps-sanctions
         ../transaction-monitoring
