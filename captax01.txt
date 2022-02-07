@@ -97,7 +97,8 @@
             ../account 
     /payment-ordering/payment-restrictions/product-type
     /payment-ordering/payment-restrictions/notice-accounts
-    /payment-ordering/notice-account.notice-period-policing
+    /payment-ordering/notice-account
+        ./notice-period-policing
     /payment-ordering/cash-management
         ./sweeping
     /payment-ordering/auto-detect-internal-transfers
