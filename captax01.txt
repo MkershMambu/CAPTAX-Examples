@@ -82,7 +82,8 @@
 /payments/openbanking-PSD2
     ./payments
 /payment-ordering
-    ./future-dated-payments
+    /payment-ordering/loan-disburement-process
+    /payment-ordering/future-dated-payments
         ./standing-orders 
         ../oneoff-forward-dated-payment 
     /payment-ordering/payment-policy-authorisation-rules
