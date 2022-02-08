@@ -1,16 +1,16 @@
-/channels
-    ./self-service
+[M1]/channels
+    @M1/self-service
         ./mobile-app
         ../web-portal
-/channels/assisted
-    ./agent-desktop
-    ../broker-portal
-    ../postroom
-    ../branch-teller
-    ../contact-centre
-    ../contact-centre/IVR
-/channels/open-banking-PSD2 
-/channels/intermediary-interface   
+    @M1/assisted
+        ./agent-desktop
+        ../broker-portal
+        ../postroom
+        ../branch-teller
+        ../contact-centre
+        ../contact-centre/IVR
+    @M1/open-banking-PSD2 
+    @M1/intermediary-interface   
 /onboarding-origination
     ./customer-onboarding
     ../product-origination
