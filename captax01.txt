@@ -1,4 +1,4 @@
-[M1]/channels
+[M1]/component/channels
     @M1/self-service
         ./mobile-app
         ../web-portal
@@ -13,13 +13,13 @@
         ../contact-centre/IVR
     @M1/open-banking-PSD2 
     @M1/intermediary-interface   
-/onboarding-origination
+/component/onboarding-origination
     ./customer-onboarding
     ../product-origination
         ./product-catalogue
           ./lending
           ../deposits
-/customer
+/component/customer
     ./CIF
     ../CRM
         ./customer-servicing
@@ -27,7 +27,7 @@
             ./product-catalogue
                 ./lending
                 ../deposits
-/product-core
+/component/product-core
     ./product-catalogue
         ./lending
             ./personal-lending
@@ -35,26 +35,26 @@
             ../purchase-finance
             ../commercial-lending
             ../retail-mortgages
-/product-core/product-catalogue/deposits
+/component/product-core/product-catalogue/deposits
             ./personal-deposits
             ../business-deposits
             ../stored-value-account
             ../daily-banking-account
             ../business-banking-account
-/product-core/product-factory
-/product-core/system-of-record
+/component/product-core/product-factory
+/component/product-core/system-of-record
     ./customer-level-accounts
     ../accounting-GL
-/product-core/account-servicing-support
-/product-core/product-statements-reports
-/payments
+/component/product-core/account-servicing-support
+/component/product-core/product-statements-reports
+/component/payments
     ./domestic-clearing
         ./UK
             ./FPS
                 ./credit-transfer
                     ./outgoing
                     ../incoming
-            /payments/domestic-clearing/BACS
+            /component/payments/domestic-clearing/BACS
                 ./direct-debit
                     ./mandate-setup
                         ./outgoing
@@ -62,121 +62,121 @@
                     ../collection
                         ./outgoing
                         ../incoming
-                /payments/domestic-clearing/BACS/ISA-transfers
+                /component/payments/domestic-clearing/BACS/ISA-transfers
                     ./outgoing
                     ../incoming
-                /payments/domestic-clearing/BACS/CASS
-                /payments/domestic-clearing/BACS/credit-transfer
+                /component/payments/domestic-clearing/BACS/CASS
+                component/payments/domestic-clearing/BACS/credit-transfer
                     ./incoming
                     ../outgoing
-            /payments/domestic-clearing/CHAPS
+            /component/payments/domestic-clearing/CHAPS
                 ./credit-transfer
                     ./outgoing
                     ../incoming
-            /payments/domestic-clearing/BACS/ICS
+            /component/payments/domestic-clearing/BACS/ICS
                 ./cheque-deposit
                     ./outgoing
                 ../incoming
-/payments/CASH
-/payments/cards
+/component/payments/CASH
+/component/payments/cards
     ./acquiring
-/payments/cards/issuing
-/payments/openbanking-PSD2
+/component/payments/cards/issuing
+/component/payments/openbanking-PSD2
     ./payments
-/payment-ordering
-    /payment-ordering/loan-disburement-process
-    /payment-ordering/future-dated-payments
+[M1]/component/payment-ordering
+    @M1/loan-disburement-process
+    @M1/future-dated-payments
         ./standing-orders 
         ../oneoff-forward-dated-payment 
-    /payment-ordering/payment-policy-authorisation-rules
+    @M1/payment-policy-authorisation-rules
         ./bank-side-rules
         ../customer-side-rules
-    /payment-ordering/payee-beneficiary-management
-    /payment-ordering/payment-limits
-    /payment-ordering/fx-quotes
-    /payment-ordering/payment-restrictions
+    @M1/payee-beneficiary-management
+    @M1/payment-limits
+    @M1/fx-quotes
+    @M1/payment-restrictions
         ./locked-blocked-flagged
             ./customer 
             ../account 
-    /payment-ordering/payment-restrictions/product-type
-    /payment-ordering/payment-restrictions/notice-accounts
-    /payment-ordering/notice-account
+    @M1/payment-restrictions/product-type
+    @M1/payment-restrictions/notice-accounts
+    @M1/notice-account
         ./notice-period-policing
-    /payment-ordering/cash-management
+    @M1/cash-management
         ./sweeping
-    /payment-ordering/auto-detect-internal-transfers
-    /payment-ordering/confirmation-of-payee
-    /payment-ordering/batch-payments
-    /payment-ordering/direct-debit-collection-retries
-/reg-reporting
+    @M1/auto-detect-internal-transfers
+    @M1/confirmation-of-payee
+    @M1/batch-payments
+    @M1/direct-debit-collection-retries
+[M1]/component/reg-reporting
     ./general-reg-reports
         ./UK
-    /reg-reporting/product-catalogue
+    @M1/product-catalogue
         ./lending
             ./personal-lending
                 ./UK
                     ./CCA
-            /reg-reporting/product-catalogue/lending/SME-lending
+            @M1/product-catalogue/lending/SME-lending
                 ./UK
                    ./unregulated
-            /reg-reporting/product-catalogue/lending/purchase-finance
+            @M1/product-catalogue/lending/purchase-finance
                 ./UK
                    ./CCA
-            /reg-reporting/product-catalogue/lending/commercial-lending
+            @M1/product-catalogue/lending/commercial-lending
                 ./UK
                     ./unregulated
-            /reg-reporting/product-catalogue/lending/retail-mortgages
+            @M1/product-catalogue/lending/retail-mortgages
                 ./UK
                     ./MCOB
-/reg-reporting/product-catalogue/deposits
+@M1/product-catalogue/deposits
             ./personal-deposits
                 ./UK
                     ./TBD
-            /reg-reporting/product-catalogue/deposits/business-deposits
+            @M1/product-catalogue/deposits/business-deposits
                 ./UK
                     ./TBD
-            /reg-reporting/product-catalogue/deposits/stored-value-account
+            @M1/product-catalogue/deposits/stored-value-account
                 ./UK
                     ./TBD
-            /reg-reporting/product-catalogue/deposits/daily-banking-account
+            @M1/product-catalogue/deposits/daily-banking-account
                 ./UK
                     ./TBD
-            /reg-reporting/product-catalogue/deposits/business-banking-account
+            @M1/product-catalogue/deposits/business-banking-account
                 ./UK
                     ./TBD
-/document-management
+/component/document-management
     ./dms-archive
     ../dms-generate
     ../dms-scam
     ../dms-esignature
-/financial-crime
+[M1]/component/financial-crime
     ./customer
         ./peps-sanctions
-    /financial-crime/payments
+    @M1/payments
         ./peps-sanctions
         ../transaction-monitoring
         ../card-fraud
         ../cheque-fraud
-/accounting-GL
-/treasury-ALM
-/data-lake-DWH
+/component/accounting-GL
+/component/treasury-ALM
+/component/data-lake-DWH
     ./DWH-datastore
     ../MI-reports
     ../business-intelligence-insights
     ../marketing-campaigns
-/asset-management
+/component/asset-management
     ./asset-registry
     ../full-asset-management
-/collections-recovery
-/single-sign-on-IAM 
-/data-reconciliation
-/fulfilment-services
+/component/collections-recovery
+/component/single-sign-on-IAM 
+/component/data-reconciliation
+/component/fulfilment-services
     ./welcome-pack
     ../cheque-book
     ../passbook
     ../statements
     ../physical-cards
-/system-monitoring-SIEM
+/component/system-monitoring-SIEM
 [M1]/connector
     ./digital-channels
     ../customer-onboarding-product-origination
