@@ -186,7 +186,7 @@
         ./card-setup-admin
         ../card-transactions
     @M1/card-acquiring
-    @M1/Data-Lake/DWH 
+    @M1/data-lake-DWH 
     @M1/regulatory-reporting
     @M1/collections-debt-recovery
     @M1/treasury-management
