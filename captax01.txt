@@ -66,7 +66,7 @@
                     ./outgoing
                     ../incoming
                 /component/payments/domestic-clearing/BACS/CASS
-                component/payments/domestic-clearing/BACS/credit-transfer
+                /component/payments/domestic-clearing/BACS/credit-transfer
                     ./incoming
                     ../outgoing
             /component/payments/domestic-clearing/CHAPS
