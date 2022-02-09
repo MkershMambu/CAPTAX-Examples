@@ -177,6 +177,20 @@
     ../statements
     ../physical-cards
 /system-monitoring-SIEM
+[M1]/connector
+    ./digital-channels
+    ../customer-onboarding-product-origination
+    ../domestic-payment-gateway
+    ../foreign-payment-gateway
+    ../card-issuing
+        ./card-setup-admin
+        ../card-transactions
+    @M1/card-acquiring
+    @M1/Data-Lake/DWH 
+    @M1/regulatory-reporting
+    @M1/collections-debt-recovery
+    @M1/treasury-management
+    @M1/accounting-GL
 [M1]/architecture
     ./deployment
         ./BPO
