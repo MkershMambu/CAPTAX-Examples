@@ -202,4 +202,13 @@
         @M1/deployment/iPaaS
         @M1/deployment/BPaaS
         @M1/deployment/BaaS
+    @M1/infrastructure
+        ./cloud-hosting-provider
+            ./AWS
+            ../Azure
+            ../GCP
+            ../OCI
+            ../other
+
+
         
