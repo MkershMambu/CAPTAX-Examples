@@ -11,6 +11,6 @@ Example capability-taxonmony (CAPTAX) for identifying the capability(s) required
     * [product-core/product-catalogue](https://github.com/MkershMambu/CAPTAX-Examples/tree/main/captax01/component/product-core/product-catalogue)
     * [onboarding-origination/product-origination/product-catalogue](https://github.com/MkershMambu/CAPTAX-Examples/tree/main/captax01/component/onboarding-origination/product-origination/product-catalogue)
     * [customer/CRM/account-servicing/product-catalogue](https://github.com/MkershMambu/CAPTAX-Examples/tree/main/captax01/component/customer/CRM/account-servicing/product-catalogue)
-    * [captax01/reg-reporting/product-catalogue](https://github.com/MkershMambu/CAPTAX-Examples/tree/main/captax01/component/reg-reporting/product-catalogue)
+    * [reg-reporting/product-catalogue](https://github.com/MkershMambu/CAPTAX-Examples/tree/main/captax01/component/reg-reporting/product-catalogue)
 
 
