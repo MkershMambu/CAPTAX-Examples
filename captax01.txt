@@ -2,6 +2,8 @@
     @M1/self-service
         ./mobile-app
         ../web-portal
+        ../PFM
+            ./BFM
     @M1/assisted
         ./agent-desktop
         ../broker-portal
@@ -175,3 +177,15 @@
     ../statements
     ../physical-cards
 /system-monitoring-SIEM
+[M1]/architecture
+    ./deployment
+        ./BPO
+        ../SaaS
+            ./true-SaaS
+        @M1/deployment/managed-service
+        @M1/deployment/onpremise
+        @M1/deployment/iPaaS
+        @M1/deployment/iPaaS
+        @M1/deployment/BPaaS
+        @M1/deployment/BaaS
+        
