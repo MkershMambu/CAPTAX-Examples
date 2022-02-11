@@ -97,6 +97,18 @@
                 ./cheque-deposit
                     ./outgoing
                 ../incoming
+    /component/payments/foreign-payments
+        ./account-identifiers
+            ./IBAN
+            ../local-domestic
+        .../foreign-clearing
+            ./SWIFT
+            ../private-domestic
+        .../managed-fx-service
+        ./FX-broker
+        ../FX-treasury
+        ../correspondent-banking
+        ../fxpot-guardian-account   
 /component/payments/CASH
 /component/payments/CHEQUE
 /component/payments/cards
