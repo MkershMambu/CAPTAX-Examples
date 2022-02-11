@@ -18,7 +18,17 @@
     ../product-origination
         ./product-catalogue
           ./lending
+            ./personal-lending
+            ../SME-lending
+            ../purchase-finance
+            ../commercial-lending
+            ../retail-mortgages
           ../deposits
+            ./personal-deposits
+            ../business-deposits
+            ../stored-value-account
+            ../daily-banking-account
+            ../business-banking-account
 /component/customer
     ./CIF
     ../CRM
@@ -26,7 +36,17 @@
         ../account-servicing
             ./product-catalogue
                 ./lending
+                    ./personal-lending
+                    ../SME-lending
+                    ../purchase-finance
+                    ../commercial-lending
+                    ../retail-mortgages
                 ../deposits
+                    ./personal-deposits
+                    ../business-deposits
+                    ../stored-value-account
+                    ../daily-banking-account
+                    ../business-banking-account
 /component/product-core
     ./product-catalogue
         ./lending
