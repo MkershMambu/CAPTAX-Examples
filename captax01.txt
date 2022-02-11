@@ -74,7 +74,7 @@
                 ./credit-transfer
                     ./outgoing
                     ../incoming
-            .../BACS
+            /component/payments/domestic-clearing/UK/BACS
                 ./direct-debit
                     ./mandate-setup
                         ./outgoing
@@ -89,7 +89,7 @@
                 /component/payments/domestic-clearing/UK/BACS/credit-transfer
                     ./incoming
                     ../outgoing
-            .../CHAPS
+            /component/payments/domestic-clearing/UK/CHAPS
                 ./credit-transfer
                     ./outgoing
                     ../incoming
