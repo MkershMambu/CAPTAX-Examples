@@ -79,7 +79,7 @@
                     ./mandate-setup
                         ./outgoing
                         ../incoming
-                    ../collection
+                    .../collection
                         ./outgoing
                         ../incoming
                 /component/payments/domestic-clearing/UK/BACS/ISA-transfers
@@ -93,7 +93,7 @@
                 ./credit-transfer
                     ./outgoing
                     ../incoming
-            /component/payments/domestic-clearing/UK/BACS/ICS
+            /component/payments/domestic-clearing/UK/ICS
                 ./cheque-deposit
                     ./outgoing
                 ../incoming
