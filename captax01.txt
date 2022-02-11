@@ -23,7 +23,7 @@
             ../purchase-finance
             ../commercial-lending
             ../retail-mortgages
-          ../deposits
+          .../deposits
             ./personal-deposits
             ../business-deposits
             ../stored-value-account
@@ -41,7 +41,7 @@
                     ../purchase-finance
                     ../commercial-lending
                     ../retail-mortgages
-                ../deposits
+                .../deposits
                     ./personal-deposits
                     ../business-deposits
                     ../stored-value-account
