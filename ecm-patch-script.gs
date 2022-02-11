@@ -13,7 +13,7 @@ function ungroupIt(str1) {
 };
 
 function main() {
-groupIt('3:16');
+  groupIt('3:16');
 groupIt('18:22');
 groupIt('24:30');
 groupIt('32:50');
@@ -26,7 +26,7 @@ groupIt('164:167');
 groupIt('169:170');
 groupIt('175:179');
 groupIt('182:194');
-groupIt('196:213');
+groupIt('196:212');
 groupIt('4:7');
 groupIt('9:14');
 groupIt('20:22');
@@ -47,7 +47,7 @@ groupIt('155:155');
 groupIt('157:160');
 groupIt('187:188');
 groupIt('197:205');
-groupIt('207:213');
+groupIt('207:212');
 groupIt('7:7');
 groupIt('14:14');
 groupIt('21:22');
@@ -61,7 +61,7 @@ groupIt('100:101');
 groupIt('117:131');
 groupIt('133:147');
 groupIt('199:199');
-groupIt('208:213');
+groupIt('208:212');
 groupIt('29:30');
 groupIt('55:57');
 groupIt('60:65');
@@ -94,5 +94,6 @@ groupIt('144:144');
 groupIt('147:147');
 groupIt('64:65');
 
+  spreadsheet.getActiveSheet().collapseAllRowGroups();
 }
 
