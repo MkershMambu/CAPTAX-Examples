@@ -74,7 +74,7 @@
                 ./credit-transfer
                     ./outgoing
                     ../incoming
-            /component/payments/domestic-clearing/BACS
+            .../BACS
                 ./direct-debit
                     ./mandate-setup
                         ./outgoing
@@ -82,22 +82,23 @@
                     ../collection
                         ./outgoing
                         ../incoming
-                /component/payments/domestic-clearing/BACS/ISA-transfers
+                /component/payments/domestic-clearing/UK/BACS/ISA-transfers
                     ./outgoing
                     ../incoming
-                /component/payments/domestic-clearing/BACS/CASS
-                /component/payments/domestic-clearing/BACS/credit-transfer
+                /component/payments/domestic-clearing/UK/BACS/CASS
+                /component/payments/domestic-clearing/UK/BACS/credit-transfer
                     ./incoming
                     ../outgoing
-            /component/payments/domestic-clearing/CHAPS
+            .../CHAPS
                 ./credit-transfer
                     ./outgoing
                     ../incoming
-            /component/payments/domestic-clearing/BACS/ICS
+            /component/payments/domestic-clearing/UK/BACS/ICS
                 ./cheque-deposit
                     ./outgoing
                 ../incoming
 /component/payments/CASH
+/component/payments/CHEQUE
 /component/payments/cards
     ./acquiring
 /component/payments/cards/issuing
