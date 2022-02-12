@@ -1,18 +1,18 @@
-[M1]/component/channels
-    @M1/self-service
+/component/channels
+    $1/self-service
         ./mobile-app
         ../web-portal
         ../PFM
             ./BFM
-    @M1/assisted
+    $1/assisted
         ./agent-desktop
         ../broker-portal
         ../postroom
         ../branch-teller
         ../contact-centre
         ../contact-centre/IVR
-    @M1/open-banking-PSD2 
-    @M1/intermediary-interface   
+    $1/open-banking-PSD2 
+    $1/intermediary-interface   
 /component/onboarding-origination
     ./customer-onboarding
     ../product-origination
@@ -55,7 +55,7 @@
             ../purchase-finance
             ../commercial-lending
             ../retail-mortgages
-/component/product-core/product-catalogue/deposits
+        $2/deposits
             ./personal-deposits
             ../business-deposits
             ../stored-value-account
@@ -74,7 +74,7 @@
                 ./credit-transfer
                     ./outgoing
                     ../incoming
-            /component/payments/domestic-clearing/UK/BACS
+            $3/BACS
                 ./direct-debit
                     ./mandate-setup
                         ./outgoing
@@ -82,22 +82,22 @@
                     .../collection
                         ./outgoing
                         ../incoming
-                /component/payments/domestic-clearing/UK/BACS/ISA-transfers
+                $4/ISA-transfers
                     ./outgoing
                     ../incoming
-                /component/payments/domestic-clearing/UK/BACS/CASS
-                /component/payments/domestic-clearing/UK/BACS/credit-transfer
+                $4/CASS
+                $4/credit-transfer
                     ./incoming
                     ../outgoing
-            /component/payments/domestic-clearing/UK/CHAPS
+            $3/CHAPS
                 ./credit-transfer
                     ./outgoing
                     ../incoming
-            /component/payments/domestic-clearing/UK/ICS
+            $3/ICS
                 ./cheque-deposit
                     ./outgoing
                 ../incoming
-    /component/payments/foreign-payments
+    $1/foreign-payments
         ./account-identifiers
             ./IBAN
             ../local-domestic
@@ -109,72 +109,72 @@
         ../FX-treasury
         ../correspondent-banking
         ../fxpot-guardian-account   
-/component/payments/CASH
-/component/payments/CHEQUE
-/component/payments/cards
-    ./acquiring
-/component/payments/cards/issuing
-/component/payments/openbanking-PSD2
-    ./payments
-[M1]/component/payment-ordering
-    @M1/loan-disburement-process
-    @M1/future-dated-payments
+    $1/CASH
+    $1/CHEQUE
+    $1/cards
+        ./acquiring
+        $2/issuing
+    $1/openbanking-PSD2
+        ./payments
+/component/payment-ordering
+    $1/loan-disburement-process
+    $1/future-dated-payments
         ./standing-orders 
         ../oneoff-forward-dated-payment 
-    @M1/payment-policy-authorisation-rules
+    $1/payment-policy-authorisation-rules
         ./bank-side-rules
         ../customer-side-rules
-    @M1/payee-beneficiary-management
-    @M1/payment-limits
-    @M1/fx-quotes
-    @M1/payment-restrictions
+    $1/payee-beneficiary-management
+    $1/payment-limits
+    $1/fx-quotes
+    $1/payment-restrictions
         ./locked-blocked-flagged
             ./customer 
             ../account 
-    @M1/payment-restrictions/product-type
-    @M1/payment-restrictions/notice-accounts
-    @M1/notice-account
+    $1/payment-restrictions/product-type
+    $1/payment-restrictions/notice-accounts
+    $1/notice-account
         ./notice-period-policing
-    @M1/cash-management
+    $1/cash-management
         ./sweeping
-    @M1/auto-detect-internal-transfers
-    @M1/confirmation-of-payee
-    @M1/batch-payments
-    @M1/direct-debit-collection-retries
-[M1]/component/reg-reporting
+    $1/auto-detect-internal-transfers
+    $1/confirmation-of-payee
+    $1/batch-payments
+    $1/direct-debit-collection-retries
+/component/reg-reporting
     ./general-reg-reports
         ./UK
-    @M1/product-catalogue
+    $1/product-catalogue
         ./lending
             ./personal-lending
                 ./UK
                     ./CCA
-            @M1/product-catalogue/lending/SME-lending
+            $3/SME-lending
                 ./UK
                    ./unregulated
-            @M1/product-catalogue/lending/purchase-finance
+            $3/purchase-finance
                 ./UK
                    ./CCA
-            @M1/product-catalogue/lending/commercial-lending
+            $3/commercial-lending
                 ./UK
                     ./unregulated
-            @M1/product-catalogue/lending/retail-mortgages
+            $3/retail-mortgages
                 ./UK
                     ./MCOB
-@M1/product-catalogue/deposits
+        $2/deposits
             ./personal-deposits
                 ./UK
                     ./TBD
-            @M1/product-catalogue/deposits/business-deposits
+            $3/business-deposits
                 ./UK
                     ./TBD
-            @M1/product-catalogue/deposits/stored-value-account
+            $3/stored-value-account
                 ./UK
                     ./TBD
-            @M1/product-catalogue/deposits/daily-banking-account
+            $3/daily-banking-account
                 ./UK
                     ./TBD
-            @M1/product-catalogue/deposits/business-banking-account
+            $3/business-banking-account
                 ./UK
                     ./TBD
 /component/document-management
@@ -182,11 +182,12 @@
     ../dms-generate
     ../dms-scam
     ../dms-esignature
-[M1]/component/financial-crime
+/component/financial-crime
     ./customer
         ./peps-sanctions
-    @M1/payments
+    $1/payments
         ./peps-sanctions
+        ../AML
         ../transaction-monitoring
         ../card-fraud
         ../cheque-fraud
@@ -210,7 +211,7 @@
     ../statements
     ../physical-cards
 /component/system-monitoring-SIEM
-[M1]/connector
+/connector
     ./digital-channels
     ../customer-onboarding-product-origination
     ../domestic-payment-gateway
@@ -218,24 +219,24 @@
     ../card-issuing
         ./card-setup-admin
         ../card-transactions
-    @M1/card-acquiring
-    @M1/data-lake-DWH 
-    @M1/regulatory-reporting
-    @M1/collections-debt-recovery
-    @M1/treasury-management
-    @M1/accounting-GL
-[M1]/architecture
+    $1/card-acquiring
+    $1/data-lake-DWH 
+    $1/regulatory-reporting
+    $1/collections-debt-recovery
+    $1/treasury-management
+    $1/accounting-GL
+/architecture
     ./deployment
         ./BPO
         ../SaaS
             ./true-SaaS
-        @M1/deployment/managed-service
-        @M1/deployment/onpremise
-        @M1/deployment/iPaaS
-        @M1/deployment/iPaaS
-        @M1/deployment/BPaaS
-        @M1/deployment/BaaS
-    @M1/infrastructure
+        $2/managed-service
+        $2/onpremise
+        $2/iPaaS
+        $2/iPaaS
+        $2/BPaaS
+        $2/BaaS
+    $1/infrastructure
         ./cloud-hosting-provider
             ./AWS
             ../Azure
