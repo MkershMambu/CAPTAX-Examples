@@ -185,6 +185,9 @@
 /component/financial-crime
     ./customer
         ./peps-sanctions
+        $2/KYC
+        $2/KYB
+        $2/ID&V
     $1/payments
         ./peps-sanctions
         ../AML
