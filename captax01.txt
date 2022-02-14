@@ -233,7 +233,6 @@
         $2/managed-service
         $2/onpremise
         $2/iPaaS
-        $2/iPaaS
         $2/BPaaS
         $2/BaaS
     $1/infrastructure
