@@ -11,7 +11,18 @@
         ../branch-teller
         ../contact-centre
         ../contact-centre/IVR
-    $1/open-banking-PSD2 
+    $1/open-banking-PSD2
+        $2/psd2-inbound-ASPSP
+            ./AISP-services
+            ../PISP-services
+        $2/psd2-outbound-TPP
+            ./AISP-services
+            ../PISP-services
+        $2/open-banking
+            ./UK
+                ./confirmation-of-payee
+                    ./incoming
+                    ../outgoing
     $1/intermediary-interface   
 /component/onboarding-origination
     ./customer-onboarding
@@ -114,8 +125,17 @@
     $1/cards
         ./acquiring
         $2/issuing
-    $1/openbanking-PSD2
+    $1/open-banking-PSD2
         ./payments
+            $3/psd2-inbound-ASPSP
+                ./PISP-services
+            $3/psd2-outbound-TPP
+                ./PISP-services
+            $3/open-banking
+                ./UK
+                    ./confirmation-of-payee
+                        ./incoming
+                        ../outgoing
 /component/payment-ordering
     $1/loan-disburement-process
     $1/future-dated-payments
