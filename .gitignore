@@ -2,3 +2,5 @@ ECM.csv
 .DS_Store
 springy/
 generate/*
+.lsp/.cache/db.transit.json
+.clj-kondo/.cache/v1/lock
