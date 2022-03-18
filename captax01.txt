@@ -4,6 +4,10 @@
         ../web-portal
         ../PFM
             ./BFM
+        $2/virtual-assistant
+            ./chatbot
+            ../videobot
+            ../conversationalAI
     $1/assisted
         ./agent-desktop
         ../broker-portal
@@ -11,6 +15,12 @@
         ../branch-teller
         ../contact-centre
         ../contact-centre/IVR
+    $1/notification-services
+        ./mobile-SMS
+        ../email
+        ../post
+        ../mobile-push 
+        ../digital-secure-message
     $1/open-banking-PSD2
         $2/psd2-inbound-ASPSP
             ./AISP-services
