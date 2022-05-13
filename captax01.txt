@@ -210,7 +210,7 @@
 /component/document-management
     ./dms-archive
     ../dms-generate
-    ../dms-scam
+    ../dms-scan
     ../dms-esignature
 /component/financial-crime
     ./customer
